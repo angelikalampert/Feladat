@@ -1,4 +1,4 @@
-class Calculator:
+class Calculators:
     def add(self, a, b):
         return a + b
 
