@@ -1,15 +1,17 @@
-name: unit test
+name: interation test
 on: 
-  pull_request:
+  push:
     branches:
       - main
 
 jobs:
   build:
-    name: UnitTest
+    name: IntegrationTest
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: UnitTest
       run: python Unittest.py
+    - name: IntegrationTest
+      run: python Integrationtest.py
