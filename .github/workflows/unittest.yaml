@@ -1,0 +1,12 @@
+name: unit test
+on: 
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: UnitTest
+    steps:
+    - name: UnitTest
+      run: python Unittest.py
