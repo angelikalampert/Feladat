@@ -1,3 +1,5 @@
+import unittest
+
 class TestCalculatorIntegration(unittest.TestCase):
     def setUp(self):
         self.calc = Calculator()
